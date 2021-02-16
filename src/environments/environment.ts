@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiKey: 'ac1b0b1572524640a0ecc54de453ea9f',
+  apiCode: '6289a7bb-a1a8-40d5-bed1-bff3a5f62ee6',
+  apiUrl: 'http://partnerapi.funda.nl/'
+
 };
 
 /*
@@ -13,4 +17,4 @@ export const environment = {
  * This import should be commented out in production mode because it will have a negative impact
  * on performance if an error is thrown.
  */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+import 'zone.js/dist/zone-error';  // Included with Angular CLI.

@@ -8,8 +8,7 @@ import {Details} from './data.interface';
   styleUrls: ['./data.component.scss']
 })
 export class DataComponent implements OnInit {
-  data: any;
-
+  data: Details | undefined;
   constructor(private partnerApi: PartnerApiService) {
   }
 

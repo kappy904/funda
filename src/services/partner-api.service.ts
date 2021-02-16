@@ -1,14 +1,15 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {Details} from '../components/data/data.interface';
-import {catchError, retry, retryWhen} from 'rxjs/operators';
+import {catchError, retry} from 'rxjs/operators';
 import {throwError} from 'rxjs';
+import {environment} from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PartnerApiService {
-  url = 'http://partnerapi.funda.nl/feeds/Aanbod.svc/json/detail/ac1b0b1572524640a0ecc54de453ea9f/koop/6289a7bb-a1a8-40d5-bed1-bff3a5f62ee6/';
+  url = `${environment.apiUrl}feeds/Aanbod.svc/json/detail/${environment.apiKey}/koop/${environment.apiCode}/`;
 
   constructor(private http: HttpClient) {
   }
