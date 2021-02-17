@@ -1,11 +1,4 @@
-<p>data works!</p>
+<ng-container *ngFor="let item of data?.Media">
+  <app-media-items [media]="item"></app-media-items>
+</ng-container>
 
-<div>
-  <ul>
-    <li>Definitief {{ data.Energielabel.Definitief}}</li>
-    <li>Definitief {{ data.Energielabel.Index}}</li>
-    <li>Definitief {{ data.Energielabel.Label}}</li>
-    <li>Definitief {{ data.Energielabel.NietBeschikbaar}}</li>
-    <li>Definitief {{ data.Energielabel.NietVerplicht}}</li>
-  </ul>
-</div>

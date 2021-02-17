@@ -1,0 +1,19 @@
+<ul [hidden]="true">
+  <li>{{ media?.Id }}</li>
+  <li>{{ media?.Categorie }}</li>
+  <li>{{ media?.ContentType }}</li>
+  <li>{{ media?.IndexNumber }}</li>
+  <li></li>
+  <li>{{ media?.Metadata }}</li>
+  <li>{{ media?.Omschrijving }}</li>
+  <li>{{ media?.RegistratieVerplicht }}</li>
+</ul>
+
+<ul *ngFor="let img of media?.MediaItems">
+  <ng-container *ngIf="img.Category === 7">
+    <img [width]="img.Width"
+         [height]="img.Height"
+         [src]="img.UrlSecure"/>
+  </ng-container>
+</ul>
+
