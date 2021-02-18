@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {PartnerApiService} from '../../services/partner-api.service';
+import {PartnerApiService} from '../../../services/partner-api.service';
 import {Details} from './data.interface';
 
 @Component({

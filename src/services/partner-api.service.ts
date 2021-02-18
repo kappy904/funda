@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import {Details} from '../components/data/data.interface';
+import {Details} from '../app/components/data/data.interface';
 import {catchError, retry} from 'rxjs/operators';
 import {throwError} from 'rxjs';
 import {environment} from '../environments/environment';

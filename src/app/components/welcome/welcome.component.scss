@@ -1,0 +1,127 @@
+:root {
+   --names: 'x y z'
+}
+.welcome {
+  &__layout {
+    background-color: #fff;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTQ0MCAzMjAiPjxwYXRoIGZpbGw9IiNmN2ExMDAiIGZpbGwtb3BhY2l0eT0iMSIgZD0iTTAsNjRMMCwxNjBMNDAsMTYwTDQwLDIyNEw4MCwyMjRMODAsOTZMMTIwLDk2TDEyMCwxMjhMMTYwLDEyOEwxNjAsMjI0TDIwMCwyMjRMMjAwLDY0TDI0MCw2NEwyNDAsMjI0TDI4MCwyMjRMMjgwLDk2TDMyMCw5NkwzMjAsOTZMMzYwLDk2TDM2MCw2NEw0MDAsNjRMNDAwLDE2MEw0NDAsMTYwTDQ0MCwzMjBMNDgwLDMyMEw0ODAsNjRMNTIwLDY0TDUyMCwxMjhMNTYwLDEyOEw1NjAsMTYwTDYwMCwxNjBMNjAwLDI1Nkw2NDAsMjU2TDY0MCw5Nkw2ODAsOTZMNjgwLDE5Mkw3MjAsMTkyTDcyMCwzMjBMNzYwLDMyMEw3NjAsNjRMODAwLDY0TDgwMCwyNTZMODQwLDI1Nkw4NDAsMjI0TDg4MCwyMjRMODgwLDI4OEw5MjAsMjg4TDkyMCwxOTJMOTYwLDE5Mkw5NjAsMTI4TDEwMDAsMTI4TDEwMDAsMjU2TDEwNDAsMjU2TDEwNDAsNjRMMTA4MCw2NEwxMDgwLDE2MEwxMTIwLDE2MEwxMTIwLDE5MkwxMTYwLDE5MkwxMTYwLDk2TDEyMDAsOTZMMTIwMCwxMjhMMTI0MCwxMjhMMTI0MCwzMjBMMTI4MCwzMjBMMTI4MCw5NkwxMzIwLDk2TDEzMjAsMzJMMTM2MCwzMkwxMzYwLDIyNEwxNDAwLDIyNEwxNDAwLDMyMEwxNDQwLDMyMEwxNDQwLDMyMEwxNDAwLDMyMEwxNDAwLDMyMEwxMzYwLDMyMEwxMzYwLDMyMEwxMzIwLDMyMEwxMzIwLDMyMEwxMjgwLDMyMEwxMjgwLDMyMEwxMjQwLDMyMEwxMjQwLDMyMEwxMjAwLDMyMEwxMjAwLDMyMEwxMTYwLDMyMEwxMTYwLDMyMEwxMTIwLDMyMEwxMTIwLDMyMEwxMDgwLDMyMEwxMDgwLDMyMEwxMDQwLDMyMEwxMDQwLDMyMEwxMDAwLDMyMEwxMDAwLDMyMEw5NjAsMzIwTDk2MCwzMjBMOTIwLDMyMEw5MjAsMzIwTDg4MCwzMjBMODgwLDMyMEw4NDAsMzIwTDg0MCwzMjBMODAwLDMyMEw4MDAsMzIwTDc2MCwzMjBMNzYwLDMyMEw3MjAsMzIwTDcyMCwzMjBMNjgwLDMyMEw2ODAsMzIwTDY0MCwzMjBMNjQwLDMyMEw2MDAsMzIwTDYwMCwzMjBMNTYwLDMyMEw1NjAsMzIwTDUyMCwzMjBMNTIwLDMyMEw0ODAsMzIwTDQ4MCwzMjBMNDQwLDMyMEw0NDAsMzIwTDQwMCwzMjBMNDAwLDMyMEwzNjAsMzIwTDM2MCwzMjBMMzIwLDMyMEwzMjAsMzIwTDI4MCwzMjBMMjgwLDMyMEwyNDAsMzIwTDI0MCwzMjBMMjAwLDMyMEwyMDAsMzIwTDE2MCwzMjBMMTYwLDMyMEwxMjAsMzIwTDEyMCwzMjBMODAsMzIwTDgwLDMyMEw0MCwzMjBMNDAsMzIwTDAsMzIwTDAsMzIwWiI+PC9wYXRoPjwvc3ZnPg==");
+    background-repeat: repeat-x;
+    background-position: -200px bottom;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animateFundaBuildings 100s linear infinite;
+  }
+
+  &__container {
+    max-width: 1100px;
+    margin: 0 2em;
+    min-height: 90vh;
+    backdrop-filter: blur(20px);
+    box-shadow: 17px 20px 100px rgb(0 0 0 / 18%);
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__logo {
+    background-image: url(https://assets.fstatic.nl/master_3444/assets/components/logo/fundawonen-logo.svg);
+    width: 140px;
+    height: 70px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+    right: 50px;
+    bottom: 30px;
+    background-repeat: no-repeat;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+
+    button {
+      margin-right: 2em;
+    }
+  }
+
+  &__animation {
+    h1 {
+      position: relative;
+      overflow: hidden;
+      max-height: 36px;
+      line-height: 36px;
+      min-width: 992px;
+      text-align: center;
+      margin-left: -80px;
+      margin-bottom: 2em;
+    }
+
+    span {
+      position: relative;
+    }
+
+    span::before {
+      content: " ";
+      height: 38px;
+      z-index: 3;
+      left: 0;
+      top: 0;
+      width: 180px;
+      position: absolute;
+      display: block;
+      text-align: left;
+      background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 255, 255, 0) 50%,
+          rgba(255, 255, 255, 1) 100%
+      );
+    }
+
+    span::after {
+      content: "Tessa Dean Andries Peter João Melvin Stephan Jelle Arturo Surbhi Aleix Monique Oriol Liewe Bart Brian Alexandros Rudy Elitsa Eduardo";
+      position: absolute;
+      z-index: 2;
+      margin-left: 10px;
+      width: 180px;
+      text-align: left;
+      will-change: transform;
+      animation:  reel 30s linear infinite alternate 1s;
+    }
+  }
+
+  /*
+  5 = number of names
+  100 - (100 / 5) = 80
+  -ve or +ve for direction down/up
+  User translate + will-change for GPU acceleration
+   */
+  @keyframes reel {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-80%);
+    }
+  }
+}
+
+
+@keyframes animateFundaBuildings {
+  0% {
+    background-position: -200px bottom;
+  }
+  100% {
+    background-position: -2000px bottom;
+  }
+}

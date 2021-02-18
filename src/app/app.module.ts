@@ -4,15 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
-import {DataComponent} from '../components/data/data.component';
+import {DataComponent} from './components/data/data.component';
 import {HttpClientModule} from '@angular/common/http';
-import {MediaItemsComponent} from '../components/media-items/media-items.component';
-
+import {MediaItemsComponent} from './components/media-items/media-items.component';
+import {WelcomeComponent} from './components/welcome/welcome.component';
 @NgModule({
   declarations: [
     AppComponent,
     DataComponent,
-    MediaItemsComponent
+    MediaItemsComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
