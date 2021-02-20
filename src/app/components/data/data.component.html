@@ -1,8 +1,26 @@
+<app-header></app-header>
 
 
+<app-hero [address]="data?.Adres"
+          [price]="data?.Koopprijs"
+          [heroImage]="data?.HoofdFotoSecure"
+          [year]="data?.Bouwjaar"
+          [place]="data?.Plaats"
+          [postcode]="data?.Postcode"
+></app-hero>
+
+<app-overview [livingArea]="data?.WoonOppervlakte"
+              [plotArea]="data?.PerceelOppervlakte"
+              [bedrooms]="data?.AantalKamers"
+              [bathrooms]="data?.AantalBadkamers"
+              [energyRating]="data?.Energielabel?.Label"
+></app-overview>
+
+
+<app-date [date]="data?.AangebodenSinds"></app-date>
+<!--<app-google-map [latitude]="data?.WGS84_X" [longitude]="data?.WGS84_Y"></app-google-map>-->
 
 <!-- Photos-->
 <ng-container class="flex" *ngFor="let item of data?.Media">
   <app-media-items [media]="item"></app-media-items>
 </ng-container>
-
