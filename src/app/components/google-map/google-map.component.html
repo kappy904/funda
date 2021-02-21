@@ -1,5 +1,6 @@
-<div class="map__container">
-  <div class="flex container justify-center align-items-center">
+<div class="map__container" (deferLoad)="lazyMap = true">
+  <ng-container *ngIf="lazyMap">
+    <div class="flex container justify-center align-items-center">
     <div class="w-50">
       <h2>Is the neighborhood to your liking?</h2>
       <p>It can be described as {{ location }}. Feel free to explore the map.</p>
@@ -17,6 +18,7 @@
       </agm-map>
     </div>
   </div>
+  </ng-container>
 </div>
 
 

@@ -10,6 +10,7 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class DetailsComponent implements OnInit {
   data$: Observable<Details> | undefined;
+  lazyGallery: boolean | undefined;
 
   constructor(
     private partnerApi: PartnerApiService,

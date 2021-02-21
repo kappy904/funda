@@ -20,6 +20,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { OneColContainerComponent } from './layout/one-col-container/one-col-container.component';
 import { DetailsComponent } from './components/details/details.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DeferLoadModule } from '@trademe/ng-defer-load';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { FooterComponent } from './components/footer/footer.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBC-k5uk4zamchOXB30-wadws_qMrHJ25s',
     }),
+    DeferLoadModule,
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,

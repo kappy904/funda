@@ -10,4 +10,5 @@ export class GoogleMapComponent {
   @Input() latitude: any;
   @Input() longitude: any;
   iconUrl = 'assets/icons/icon_marker.png';
+  lazyMap = false;
 }

@@ -32,7 +32,8 @@
                       [latitude]="data?.WGS84_Y"
       ></app-google-map>
 
-      <app-two-col-half>
+      <div (deferLoad)="lazyGallery = true">
+      <app-two-col-half *ngIf="lazyGallery">
         <ng-container text>
           <ng-container *ngFor="let item of data?.Media">
             <app-media-items [media]="item"></app-media-items>
@@ -45,7 +46,7 @@
           </div>
         </ng-container>
       </app-two-col-half>
-
+      </div>
       <app-footer></app-footer>
     </ng-container>
   </app-one-col-container>
