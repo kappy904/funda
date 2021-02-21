@@ -34,6 +34,8 @@ $screen-lg-min: 992px;
   }
 }
 
+// just a nice to have for webkit browsers
+// this can be polyfilled
 ::-webkit-scrollbar {
   width: 5px;
 }

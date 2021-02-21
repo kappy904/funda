@@ -9,7 +9,8 @@ import { environment } from '../environments/environment';
   providedIn: 'root',
 })
 export class PartnerApiService {
-  url = `${environment.apiUrl}feeds/Aanbod.svc/json/detail/${environment.apiKey}/koop/${environment.apiCode}/`;
+  // this call is future proofed for environment changes
+  apiUrl = `${environment.apiUrl}feeds/Aanbod.svc/json/detail/${environment.apiKey}/koop/${environment.apiCode}/`;
 
   constructor(private http: HttpClient) {}
 
@@ -27,7 +28,7 @@ export class PartnerApiService {
 
   getDetails(): any {
     return this.http
-      .get<Details>(this.url)
+      .get<Details>(this.apiUrl)
       .pipe(retry(2), catchError(PartnerApiService.handleError));
   }
 }

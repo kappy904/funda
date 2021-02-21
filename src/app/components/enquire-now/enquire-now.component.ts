@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-enquire-now',
@@ -8,8 +8,10 @@ export class EnquireNowComponent {
   @Input() date: any;
   @Input() agent: string | undefined;
   @Input() agentNumber: string | undefined;
+  formattedDate: string | undefined;
 
   sanitizeDate(date: any): Date {
-    return (this.date = date.match(/\d+/)[0]);
+    // I'm not sure this is correct because angulars date pipe is getting the year wrong
+    return (this.formattedDate = date.match(/\d+/)[0]);
   }
 }

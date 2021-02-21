@@ -1,6 +1,7 @@
 .loading {
   &__wrapper {
     width: 100vw;
+    // -50px due to the header. all content must be above the fold
     height: calc(100vh - 50px);
     align-items: center;
   }

@@ -11,6 +11,7 @@
       display: flex;
       overflow-x: scroll;
       width: 100%;
+      // this allows a touch event on mobile with scroll inertia
       touch-action: pan-x;
     }
 

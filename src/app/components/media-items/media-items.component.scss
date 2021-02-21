@@ -1,5 +1,6 @@
 .media {
   &__img {
+    // this is get rid of the "ghost" spacing caused as a result of multiple custom elements in the DOM
     margin-bottom: -4px;
   }
 }

@@ -1,6 +1,10 @@
 <a href="tel:{{ agentNumber }}"
    target="_blank"
    rel="noreferrer">
+<!--  This SVG is ugly but I need to manipulate its contents with CSS so I need it physically in the DOM
+      I would use a plugin called inline-svg to keep this cleaner but it currently does not work with statically generated sites
+      so this will have to do for now. This pattern occurs across the app
+-->
   <svg version="1.1"
        id="Layer_1"
        xmlns="http://www.w3.org/2000/svg"

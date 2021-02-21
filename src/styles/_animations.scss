@@ -1,6 +1,7 @@
 .animation-fade-in {
   animation: 350ms ease-in fadeIn;
   transition: opacity;
+  will-change: opacity;
 }
 
 @keyframes fadeIn {

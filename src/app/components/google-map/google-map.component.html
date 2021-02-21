@@ -1,3 +1,6 @@
+<!-- here i'm using intersection observe to only load the contents when it is almost visible
+     you can have a load at the network tab to see the results. also great for page loading times
+-->
 <div class="map__container" (deferLoad)="lazyMap = true">
   <ng-container *ngIf="lazyMap">
     <div class="flex container justify-center align-items-center">
