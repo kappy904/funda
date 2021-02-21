@@ -1,10 +1,10 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {DataComponent} from './components/data/data.component';
 import {WelcomeComponent} from './components/welcome/welcome.component';
+import {DetailsComponent} from './components/details/details.component';
 
 const routes: Routes = [
-  {path: 'data', component: DataComponent},
+  {path: 'details', component: DetailsComponent},
   {path: 'welcome', component: WelcomeComponent},
   {path: '', redirectTo: '/welcome', pathMatch: 'full'},
 ];

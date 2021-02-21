@@ -18,6 +18,7 @@ import { TwoColHalfComponent } from './layout/two-col-half/two-col-half.componen
 import { TwoColSeventyThirtyComponent } from './layout/two-col-seventy-thirty/two-col-seventy-thirty.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { OneColContainerComponent } from './layout/one-col-container/one-col-container.component';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { OneColContainerComponent } from './layout/one-col-container/one-col-con
     TwoColSeventyThirtyComponent,
     LoaderComponent,
     OneColContainerComponent,
+    DetailsComponent,
   ],
   imports: [
     AgmCoreModule.forRoot({
