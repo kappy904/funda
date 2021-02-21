@@ -1,3 +1,5 @@
+@import "src/styles/helpers";
+
 .map__container {
   align-items: center;
   padding: 40px 20px 20px 20px;
@@ -9,7 +11,7 @@
   color: #000000;
 
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: $screen-lg-min) {
     text-align: left;
     padding: 2em;
     max-width: 1400px;
@@ -25,7 +27,7 @@
 
     &:nth-child(1) {
       padding: 10px 10px 0 0;
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: $screen-lg-min) {
         padding: 0;
       }
     }
@@ -37,7 +39,7 @@
 .map {
   width: 100%;
   height: 300px;
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: $screen-lg-min) {
     height: 400px;
   }
 }

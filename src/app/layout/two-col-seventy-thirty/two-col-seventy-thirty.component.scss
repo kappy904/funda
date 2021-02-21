@@ -1,5 +1,8 @@
+@import "src/styles/helpers";
+
 .two-col-seventy-thirty {
   background: #000;
+
   .container {
     align-items: center;
     padding: 20px 20px 40px 20px;
@@ -9,7 +12,7 @@
     height: 100%;
     display: block;
     margin: 0 auto;
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: $screen-lg-min) {
       display: flex;
       text-align: left;
       padding: 2em;
@@ -24,7 +27,7 @@
   h2 {
     font-size: 25px;
     margin-bottom: 5px;
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: $screen-lg-min) {
       font-size: 2em;
       margin-bottom: 0;
     }
@@ -33,7 +36,7 @@
   p {
     margin-top: 0;
     margin-bottom: 2em;
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: $screen-lg-min) {
       margin-bottom: 0;
     }
   }

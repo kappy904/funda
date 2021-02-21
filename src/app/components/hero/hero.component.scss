@@ -1,3 +1,5 @@
+@import "src/styles/helpers";
+
 .hero {
   &__year {
     background: white;
@@ -7,7 +9,7 @@
     font-size: 16px;
     padding-right: 5px;
     margin-bottom: 13px;
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: $screen-lg-min) {
       font-size: 20px;
     }
   }
@@ -16,7 +18,7 @@
     height: 100%;
     width: 100%;
     flex-direction: column-reverse;
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: $screen-lg-min) {
       flex-direction: row;
       height: calc(100vh - 50px);
     }
@@ -29,7 +31,7 @@
       padding: 20px;
       position: relative;
       width: 100%;
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: $screen-lg-min) {
         padding: 3em;
         width: 50%;
       }
@@ -52,7 +54,7 @@
       &::before {
         content: none;
         background: rgba(0, 0, 0, 0.1);
-        @media screen and (min-width: 992px) {
+        @media screen and (min-width: $screen-lg-min) {
           content: '';
           background: #0003;
           position: absolute;
@@ -70,7 +72,7 @@
         width: 100%;
         margin-bottom: -4px;
         height: 40vh;
-        @media screen and (min-width: 992px) {
+        @media screen and (min-width: $screen-lg-min) {
           filter: grayscale(100%);
           transition: 500ms ease-out filter;
           height: 100vh;
@@ -102,7 +104,7 @@
           270deg
       );
 
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: $screen-lg-min) {
         right: 5px;
         width: 20px;
         height: 20px;
@@ -125,7 +127,7 @@
       max-height: 100%;
       overflow-y: visible;
 
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: $screen-lg-min) {
         max-height: 60vh;
       }
 

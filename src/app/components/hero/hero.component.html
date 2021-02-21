@@ -1,20 +1,20 @@
 <section class="hero__layout flex">
   <div class="w-50 flex">
-
     <div>
       <p class="hero__description"
          [ngClass]="{'active': isActive}"
          (click)="onReadMore()">{{ description}}</p>
       <p class="m-0 hero__year font-secondary"> {{ year}}</p>
       <h1 class="m-0">{{ address }}</h1>
-      <h3 class="m-0 ">{{ place}} &#11037; {{ postcode }} &#11037; €{{ price }}</h3>
+      <h3 class="m-0 ">{{ place }} &#11037; {{ postcode }} &#11037; €{{ price }}</h3>
     </div>
   </div>
 
   <div class="w-50">
     <img [src]="heroImage"
          width="100%"
-         height="100%"/>
+         height="100%"
+         alt="Large House"/>
     <app-call [agentNumber]="agentNumber"></app-call>
   </div>
 </section>

@@ -1,15 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-one-col-container',
-  templateUrl: './one-col-container.component.html',
-  styleUrls: ['./one-col-container.component.scss']
+  templateUrl: './one-col-container.component.html'
 })
-export class OneColContainerComponent implements OnInit {
+export class OneColContainerComponent {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}

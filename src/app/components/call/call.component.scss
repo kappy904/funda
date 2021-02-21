@@ -1,3 +1,5 @@
+@import "src/styles/helpers";
+
 a {
   position: absolute;
   z-index: 3;
@@ -13,7 +15,7 @@ a {
   box-shadow: 1px 2px 10px 10px rgb(0 0 0 / 50%);
   transition: background-color 250ms ease-out;
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: $screen-lg-min) {
     top: auto;
     bottom: 20px;
     width: 50px;

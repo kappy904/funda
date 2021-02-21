@@ -2,8 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-enquire-now',
-  templateUrl: './enquire-now.component.html',
-  styleUrls: ['./enquire-now.component.scss']
+  templateUrl: './enquire-now.component.html'
 })
 export class EnquireNowComponent {
   @Input() date: any;

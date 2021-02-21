@@ -5,8 +5,7 @@ import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-data',
-  templateUrl: './data.component.html',
-  styleUrls: ['./data.component.scss']
+  templateUrl: './data.component.html'
 })
 export class DataComponent implements OnInit {
   data$: Observable<Details> | undefined;

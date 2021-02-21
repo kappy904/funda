@@ -15,12 +15,3 @@
     animation: rotate-in 2s infinite alternate;
   }
 }
-
-@keyframes rotate-in {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  100% {
-    transform: rotate(360deg) scale(.5);
-  }
-}
