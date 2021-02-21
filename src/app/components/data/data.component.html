@@ -25,7 +25,10 @@
                        [agentNumber]="data?.MakelaarTelefoon"
       ></app-enquire-now>
 
-      <app-google-map [location]="data?.Ligging" [latitude]="data?.WGS84_X" [longitude]="data?.WGS84_Y"></app-google-map>
+      <app-google-map [location]="data?.Ligging"
+                      [longitude]="data?.WGS84_X"
+                      [latitude]="data?.WGS84_Y"
+      ></app-google-map>
 
       <app-two-col-half>
         <ng-container text>
@@ -34,7 +37,7 @@
           </ng-container>
         </ng-container>
         <ng-container content>
-          <div><h2>There's more!</h2>
+          <div><h2 class="mt-0">There's more!</h2>
             <p>You can view the entire gallery here or click on the images to zoom</p>
             <button class="btn">VIEW GALLERY</button>
           </div>

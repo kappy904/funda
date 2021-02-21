@@ -9,7 +9,6 @@ import {Observable} from 'rxjs';
   styleUrls: ['./data.component.scss']
 })
 export class DataComponent implements OnInit {
-  // data: Details | undefined;
   data$: Observable<Details> | undefined;
   constructor(private partnerApi: PartnerApiService) {
   }

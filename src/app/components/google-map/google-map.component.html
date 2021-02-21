@@ -2,15 +2,17 @@
   <div class="flex container justify-center align-items-center">
     <div class="w-50">
       <h2>Is the neighborhood to your liking?</h2>
-      <p>Is can be described as {{ location }}. Feel free to explore the map.</p>
+      <p>It can be described as {{ location }}. Feel free to explore the map.</p>
     </div>
 
     <div class="w-50">
       <agm-map class="map"
+               [zoom]="15"
                [latitude]="latitude"
                [longitude]="longitude">
         <agm-marker [latitude]="latitude"
-                    [longitude]="longitude">
+                    [longitude]="longitude"
+                    [iconUrl]="iconUrl">
         </agm-marker>
       </agm-map>
     </div>

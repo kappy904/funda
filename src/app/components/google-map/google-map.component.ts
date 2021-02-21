@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-google-map',
@@ -6,7 +6,8 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./google-map.component.scss']
 })
 export class GoogleMapComponent {
-  @Input() latitude: string | undefined;
-  @Input() longitude: string | undefined;
   @Input() location: string | undefined;
+  @Input() latitude: any;
+  @Input() longitude: any;
+  iconUrl = 'assets/icons/icon_marker.png';
 }
