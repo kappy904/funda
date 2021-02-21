@@ -4,8 +4,17 @@
 </p>
 <h2 align="center">Angular 11 + Scully JAMstack</h2>
 
-This project is my assignment that has explored many concepts that include Async data with Observables, Object/Array destructuring, Content Projection (Transclusion), Intersection Observe for lazy loading, DRY components, SCSS architecture, Minimalism in Design, CSS3 Animations, mobile-first responsive fluid design and Scully static site generator for Angular. 
-
+This project is my assignment that has explored many concepts that include 
+1. Async data with Observables, 
+2. Object/Array destructuring, 
+3. Content Projection (Transclusion),  
+4. Intersection Observe for lazy loading, 
+5. DRY components,
+6. SCSS architecture,
+7. Minimalism in Design,
+8. Performant CSS3 Animations,
+9. Mobile-first responsive fluid design and
+10. Scully static site generator for Angular.
 
 ## Development server
 
