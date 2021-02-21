@@ -10,8 +10,8 @@ export interface Details {
   AfgekochtDatum?: null;
   BalkonDakterras?: null;
   BedrijfsruimteCombinatieObject?: null;
-  BezichtingDagdelen?: (null)[] | null;
-  BezichtingDagen?: (null)[] | null;
+  BezichtingDagdelen?: null[] | null;
+  BezichtingDagen?: null[] | null;
   BijdrageVVE?: null;
   Bijzonderheden: string;
   Bouwjaar: string;
@@ -50,7 +50,7 @@ export interface Details {
   IsVerhuurd: boolean;
   IsVerkocht: boolean;
   Isolatie: string;
-  Kenmerken?: (KenmerkenEntity)[] | null;
+  Kenmerken?: KenmerkenEntity[] | null;
   KenmerkenKort: KenmerkenKort;
   KenmerkenTitel?: null;
   Ligging: string;
@@ -58,13 +58,13 @@ export interface Details {
   Makelaar: string;
   MakelaarId: number;
   MakelaarTelefoon: string;
-  MedeAanbieders?: (null)[] | null;
-  Media?: (MediaEntity)[] | null;
-  Foto?: (string)[] | null;
+  MedeAanbieders?: null[] | null;
+  Media?: MediaEntity[] | null;
+  Foto?: string[] | null;
   MobileURL: string;
   ObjectType: string;
   ObjectTypeMetVoorvoegsel: string;
-  OpenHuizen?: (null)[] | null;
+  OpenHuizen?: null[] | null;
   PerceelOppervlakte: number;
   PermanenteBewoning: string;
   Plaats: string;
@@ -86,7 +86,7 @@ export interface Details {
   SoortParkeergelegenheid: string;
   SoortPlaatsing: number;
   SoortWoning: string;
-  Titels?: (TitelsEntity)[] | null;
+  Titels?: TitelsEntity[] | null;
   ToonBezichtigingMaken: boolean;
   ToonBrochureAanvraag: boolean;
   ToonMakelaarWoningaanbod: boolean;
@@ -144,7 +144,7 @@ export interface Energielabel {
 
 export interface KenmerkenEntity {
   Ad?: null;
-  Kenmerken?: (KenmerkenEntity1)[] | null;
+  Kenmerken?: KenmerkenEntity1[] | null;
   LokNummer: number;
   SubKenmerk?: SubKenmerk | null;
   Titel: string;
@@ -159,7 +159,7 @@ export interface KenmerkenEntity1 {
 
 export interface SubKenmerk {
   Ad?: null;
-  Kenmerken?: (null)[] | null;
+  Kenmerken?: null[] | null;
   LokNummer: number;
   SubKenmerk?: null;
   Titel: string;
@@ -167,7 +167,7 @@ export interface SubKenmerk {
 
 export interface KenmerkenKort {
   Ad?: null;
-  Kenmerken?: (KenmerkenEntity2)[] | null;
+  Kenmerken?: KenmerkenEntity2[] | null;
   LokNummer: number;
   SubKenmerk?: null;
   Titel?: null;
@@ -185,7 +185,7 @@ export interface MediaEntity {
   ContentType: number;
   Id: string;
   IndexNumber: number;
-  MediaItems?: (MediaItemsEntity)[] | null;
+  MediaItems?: MediaItemsEntity[] | null;
   Metadata?: null;
   Omschrijving: string;
   RegistratieVerplicht: boolean;

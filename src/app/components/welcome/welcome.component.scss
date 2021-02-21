@@ -20,7 +20,6 @@
   &__container {
     max-width: 1100px;
 
-
     backdrop-filter: blur(20px);
     box-shadow: 17px 20px 100px rgb(0 0 0 / 18%);
     letter-spacing: 2px;
@@ -118,10 +117,10 @@
       display: block;
       text-align: left;
       background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 1) 0%,
-          rgba(255, 255, 255, 0) 50%,
-          rgba(255, 255, 255, 1) 100%
+        180deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 1) 100%
       );
     }
 
@@ -151,7 +150,7 @@
     }
 
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;

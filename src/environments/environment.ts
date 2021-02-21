@@ -6,8 +6,7 @@ export const environment = {
   production: false,
   apiKey: 'ac1b0b1572524640a0ecc54de453ea9f',
   apiCode: '6289a7bb-a1a8-40d5-bed1-bff3a5f62ee6',
-  apiUrl: 'http://partnerapi.funda.nl/'
-
+  apiUrl: 'http://partnerapi.funda.nl/',
 };
 
 /*
@@ -18,7 +17,6 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
-
 
 // 6289a7bb-a1a8-40d5-bed1-bff3a5f62ee6
 // ec680a2d-f375-4cd3-a026-e9676bad16f3

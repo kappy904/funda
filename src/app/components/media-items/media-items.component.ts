@@ -1,11 +1,10 @@
-import {Component, Input} from '@angular/core';
-import {MediaEntity, MediaItemsEntity} from '../data/data.interface';
-
+import { Component, Input } from '@angular/core';
+import { MediaEntity, MediaItemsEntity } from '../data/data.interface';
 
 @Component({
   selector: 'app-media-items',
   templateUrl: './media-items.component.html',
-  styleUrls: ['./media-items.component.scss']
+  styleUrls: ['./media-items.component.scss'],
 })
 export class MediaItemsComponent {
   @Input() media?: MediaEntity;
@@ -14,5 +13,4 @@ export class MediaItemsComponent {
   constructor() {
     this.size = 1;
   }
-
 }

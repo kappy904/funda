@@ -1,7 +1,7 @@
-@import 'styles/helpers';
-@import 'styles/typography';
-@import 'styles/buttons';
-@import 'styles/animations';
+@import "styles/helpers";
+@import "styles/typography";
+@import "styles/buttons";
+@import "styles/animations";
 
 :root {
   --primary: #f7a100;
@@ -11,7 +11,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   * {
     box-sizing: border-box;

@@ -1,16 +1,15 @@
-import {Component, OnInit} from '@angular/core';
-import {PartnerApiService} from '../../../services/partner-api.service';
-import {Details} from './data.interface';
-import {Observable} from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { PartnerApiService } from '../../../services/partner-api.service';
+import { Details } from './data.interface';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-data',
-  templateUrl: './data.component.html'
+  templateUrl: './data.component.html',
 })
 export class DataComponent implements OnInit {
   data$: Observable<Details> | undefined;
-  constructor(private partnerApi: PartnerApiService) {
-  }
+  constructor(private partnerApi: PartnerApiService) {}
 
   ngOnInit(): void {
     this.getDetails();
@@ -20,5 +19,3 @@ export class DataComponent implements OnInit {
     this.data$ = this.partnerApi.getDetails();
   }
 }
-
-

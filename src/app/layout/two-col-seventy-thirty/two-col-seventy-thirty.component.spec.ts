@@ -8,9 +8,8 @@ describe('TwoColSeventyThirtyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TwoColSeventyThirtyComponent ]
-    })
-    .compileComponents();
+      declarations: [TwoColSeventyThirtyComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
