@@ -10,7 +10,7 @@ This project is my assignment that has explored many concepts that include
 3. Content Projection (Transclusion),  
 4. Intersection Observe for lazy loading, 
 5. DRY components,
-6. SCSS architecture,
+6. SCSS architecture + BEM,
 7. Minimalism in Design + Glassmorphism,
 8. Performant CSS3 Animations,
 9. Mobile-first responsive fluid design and

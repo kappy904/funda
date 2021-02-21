@@ -18,9 +18,9 @@ import { TwoColHalfComponent } from './layout/two-col-half/two-col-half.componen
 import { TwoColSeventyThirtyComponent } from './layout/two-col-seventy-thirty/two-col-seventy-thirty.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { OneColContainerComponent } from './layout/one-col-container/one-col-container.component';
-import { DetailsComponent } from './components/details/details.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DeferLoadModule } from '@trademe/ng-defer-load';
+import { DetailsPageComponent } from './pages/details-page/details-page.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +38,8 @@ import { DeferLoadModule } from '@trademe/ng-defer-load';
     TwoColSeventyThirtyComponent,
     LoaderComponent,
     OneColContainerComponent,
-    DetailsComponent,
     FooterComponent,
+    DetailsPageComponent,
   ],
   imports: [
     AgmCoreModule.forRoot({

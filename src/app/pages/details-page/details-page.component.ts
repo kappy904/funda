@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Details } from '../data/data.interface';
+import { Details } from '../../components/data/data.interface';
 import { PartnerApiService } from '../../../services/partner-api.service';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-details',
-  templateUrl: './details.component.html',
+  selector: 'app-details-page',
+  templateUrl: './details-page.component.html',
+  styleUrls: ['./details-page.component.scss'],
 })
-export class DetailsComponent implements OnInit {
+export class DetailsPageComponent implements OnInit {
   data$: Observable<Details> | undefined;
   lazyGallery: boolean | undefined;
 
