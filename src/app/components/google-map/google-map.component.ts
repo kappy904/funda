@@ -5,17 +5,8 @@ import {Component, Input, OnInit} from '@angular/core';
   templateUrl: './google-map.component.html',
   styleUrls: ['./google-map.component.scss']
 })
-export class GoogleMapComponent implements OnInit {
-  @Input() latitude: any;
-  @Input() longitude: any;
-
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-
-  }
-
-
+export class GoogleMapComponent {
+  @Input() latitude: string | undefined;
+  @Input() longitude: string | undefined;
+  @Input() location: string | undefined;
 }

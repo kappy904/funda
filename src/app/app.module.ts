@@ -9,10 +9,15 @@ import {HttpClientModule} from '@angular/common/http';
 import {MediaItemsComponent} from './components/media-items/media-items.component';
 import {WelcomeComponent} from './components/welcome/welcome.component';
 import {GoogleMapComponent} from './components/google-map/google-map.component';
-import {DateComponent} from './components/date/date.component';
 import {HeroComponent} from './components/hero/hero.component';
 import { HeaderComponent } from './components/header/header.component';
 import { OverviewComponent } from './components/overview/overview.component';
+import { CallComponent } from './components/call/call.component';
+import { EnquireNowComponent } from './components/enquire-now/enquire-now.component';
+import { TwoColHalfComponent } from './layout/two-col-half/two-col-half.component';
+import { TwoColSeventyThirtyComponent } from './layout/two-col-seventy-thirty/two-col-seventy-thirty.component';
+import { LoaderComponent } from './components/loader/loader.component';
+import { OneColContainerComponent } from './layout/one-col-container/one-col-container.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +26,15 @@ import { OverviewComponent } from './components/overview/overview.component';
     MediaItemsComponent,
     WelcomeComponent,
     GoogleMapComponent,
-    DateComponent,
     HeroComponent,
     HeaderComponent,
     OverviewComponent,
+    CallComponent,
+    EnquireNowComponent,
+    TwoColHalfComponent,
+    TwoColSeventyThirtyComponent,
+    LoaderComponent,
+    OneColContainerComponent,
   ],
   imports: [
     AgmCoreModule.forRoot({

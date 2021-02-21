@@ -7,5 +7,11 @@ header {
   height: 50px;
   position: sticky;
   top: 0;
-  background: #fff;
+  background: #ffffff7d;
+  backdrop-filter: blur(21px);
+  border-bottom: 1px solid  var(--primary);
+
+  img {
+    margin-right: -10px;
+  }
 }

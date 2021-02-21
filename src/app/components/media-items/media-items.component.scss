@@ -1,8 +1,5 @@
 .media {
-  &__container{
-    max-width: 992px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+  &__img {
+    margin-bottom: -4px;
   }
 }

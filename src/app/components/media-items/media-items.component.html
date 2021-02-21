@@ -1,21 +1,8 @@
-<!--<ul [hidden]="true">
-  <li>{{ media?.Id }}</li>
-  <li>{{ media?.Categorie }}</li>
-  <li>{{ media?.ContentType }}</li>
-  <li>{{ media?.IndexNumber }}</li>
-  <li></li>
-  <li>{{ media?.Metadata }}</li>
-  <li>{{ media?.Omschrijving }}</li>
-  <li>{{ media?.RegistratieVerplicht }}</li>
-</ul>-->
-
-<ng-container class="media__container"
-    *ngFor="let img of media?.MediaItems">
+<ng-container *ngFor="let img of media?.MediaItems">
   <img *ngIf="img.Category === size"
        [width]="img.Width"
        [height]="img.Height"
        [src]="img.UrlSecure"
-       alt="{{media?.Metadata}}"/>
+       alt="{{media?.Metadata}}"
+       class="media__img"/>
 </ng-container>
-
-

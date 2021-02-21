@@ -1,0 +1,26 @@
+.loading {
+  &__wrapper {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    align-items: center;
+  }
+
+  &__logo {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    will-change: trnsform;
+    animation: rotate-in 2s infinite alternate;
+  }
+}
+
+@keyframes rotate-in {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(.5);
+  }
+}

@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {PartnerApiService} from '../../../services/partner-api.service';
 import {Details} from './data.interface';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-data',
@@ -8,7 +9,8 @@ import {Details} from './data.interface';
   styleUrls: ['./data.component.scss']
 })
 export class DataComponent implements OnInit {
-  data: Details | undefined;
+  // data: Details | undefined;
+  data$: Observable<Details> | undefined;
   constructor(private partnerApi: PartnerApiService) {
   }
 
@@ -17,10 +19,7 @@ export class DataComponent implements OnInit {
   }
 
   getDetails(): void {
-    this.partnerApi.getDetails()
-      .subscribe((resp: Details) => {
-        this.data = {...resp};
-      });
+    this.data$ = this.partnerApi.getDetails();
   }
 }
 

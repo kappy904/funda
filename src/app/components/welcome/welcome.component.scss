@@ -1,6 +1,3 @@
-:root {
-   --names: 'x y z'
-}
 .welcome {
   &__layout {
     background-color: #fff;
@@ -58,12 +55,13 @@
     h1 {
       position: relative;
       overflow: hidden;
-      max-height: 36px;
-      line-height: 36px;
+      max-height: 33px;
+      line-height: 34px;
       min-width: 992px;
       text-align: center;
       margin-left: -80px;
       margin-bottom: 2em;
+      font-size: 32px;
     }
 
     span {
@@ -89,7 +87,7 @@
     }
 
     span::after {
-      content: "Tessa Dean Andries Peter João Melvin Stephan Jelle Arturo Surbhi Aleix Monique Oriol Liewe Bart Brian Alexandros Rudy Elitsa Eduardo";
+      content: "Tessa Andries Dean Peter João Melvin Stephan Jelle Arturo Surbhi Aleix Monique Oriol Liewe Bart Brian Alexandros Rudy Elitsa Eduardo";
       position: absolute;
       z-index: 2;
       margin-left: 10px;
@@ -100,12 +98,32 @@
     }
   }
 
-  /*
-  5 = number of names
-  100 - (100 / 5) = 80
-  -ve or +ve for direction down/up
-  User translate + will-change for GPU acceleration
-   */
+  a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 8px 0;
+    color: #0071b3;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      transform: scaleX(0);
+      background-color: #0071b3;
+      transition: transform 0.3s;
+    }
+
+    &:hover {
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+  }
   @keyframes reel {
     0% {
       transform: translateY(0);
