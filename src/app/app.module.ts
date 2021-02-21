@@ -19,6 +19,7 @@ import { TwoColSeventyThirtyComponent } from './layout/two-col-seventy-thirty/tw
 import { LoaderComponent } from './components/loader/loader.component';
 import { OneColContainerComponent } from './layout/one-col-container/one-col-container.component';
 import { DetailsComponent } from './components/details/details.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { DetailsComponent } from './components/details/details.component';
     LoaderComponent,
     OneColContainerComponent,
     DetailsComponent,
+    FooterComponent,
   ],
   imports: [
     AgmCoreModule.forRoot({
