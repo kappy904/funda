@@ -45,7 +45,7 @@ import { DetailsPageComponent } from './pages/details-page/details-page.componen
     // this will be removed after 1 week
     // it is required to get my google map working
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBC-k5uk4zamchOXB30-wadws_qMrHJ25s',
+      apiKey: '',
     }),
     DeferLoadModule,
     BrowserModule,
