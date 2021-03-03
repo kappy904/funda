@@ -7,7 +7,6 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { DataComponent } from './components/data/data.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MediaItemsComponent } from './components/media-items/media-items.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
 import { GoogleMapComponent } from './components/google-map/google-map.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -27,7 +26,6 @@ import { DetailsPageComponent } from './pages/details-page/details-page.componen
     AppComponent,
     DataComponent,
     MediaItemsComponent,
-    WelcomeComponent,
     GoogleMapComponent,
     HeroComponent,
     HeaderComponent,

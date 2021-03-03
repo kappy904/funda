@@ -1,10 +1,9 @@
 <p align="center">
 <img src="https://angular.io/assets/images/logos/angular/angular.svg" width="60px" height="100px"/>
-<img src="https://assets.fstatic.nl/master_3453/assets/components/logo/fundawonen-logo.svg" width="100px" height="100px"/>
 </p>
 <h2 align="center">Angular 11 + Scully JAMstack</h2>
 
-This project is my assignment that has explored many concepts that include 
+This project exploreres the following concepts that include 
 1. Async data with Observables, 
 2. Object/Array destructuring, 
 3. Content Projection (Transclusion),  
@@ -19,7 +18,7 @@ This project is my assignment that has explored many concepts that include
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-Please make sure you have a CORS plugin as the Api has not whitelisted localhost domains. Please use device emulation for mobile as there are touch events.
+Please make sure you have a CORS plugin (of whitelist the domain API) as the Api has not whitelisted localhost domains. Please use device emulation for mobile as there are touch events.
 
 ## Build
 
