@@ -3,7 +3,7 @@
 </p>
 <h2 align="center">Angular 11 + Scully JAMstack</h2>
 
-This project explorers the following concepts that include 
+This project explores the following concepts that include 
 1. Async data with Observables, 
 2. Object/Array destructuring, 
 3. Content Projection (Transclusion),  
